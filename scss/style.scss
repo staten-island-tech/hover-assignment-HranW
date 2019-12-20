@@ -7,9 +7,49 @@ html {
 
 body {
   text-align: center;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 225, 255, 0.349),
+    rgba(0, 255, 157, 0.301)
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .gallery-parent {
+  margin: 0 auto;
+  height: 60rem;
+  width: 40rem;
+}
+
+.gallery {
+  position: relative;
+  height: 60rem;
+}
+
+.Architecture {
+  height: 20rem;
+  position: absolute;
+}
+
+.one {
+  top: 10rem;
+}
+
+.two {
+  top: 20rem;
+}
+
+.three {
+  top: 30rem;
+}
+
+.four {
+  top: 40rem;
+}
+
+/* .gallery-parent {
   //text-align: center;
   margin: 0 auto;
   //width: 60rem;
@@ -52,4 +92,4 @@ body {
 .gallery:hover .pd6-photo:not(:hover){
     transform: scale(0.5);
     opacity: 0.3;
-}
+} */

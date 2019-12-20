@@ -8,6 +8,11 @@ html {
 
 body {
   text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 225, 255, 0.349)), to(rgba(0, 255, 157, 0.301)));
+  background-image: linear-gradient(to bottom, rgba(0, 225, 255, 0.349), rgba(0, 255, 157, 0.301));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .gallery-parent {
@@ -21,10 +26,43 @@ body {
   height: 60rem;
 }
 
+.Architecture {
+  height: 20rem;
+  position: absolute;
+}
+
+.one {
+  top: 10rem;
+}
+
+.two {
+  top: 20rem;
+}
+
+.three {
+  top: 30rem;
+}
+
+.four {
+  top: 40rem;
+}
+
+/* .gallery-parent {
+  //text-align: center;
+  margin: 0 auto;
+  //width: 60rem;
+  height: 60rem;
+  width: 40rem;
+}
+
+.gallery {
+  position: relative;
+  height: 60rem;
+}
+
 .pd6-photo {
   height: 20rem;
   position: absolute;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   outline-offset: 1rem;
 }
@@ -44,16 +82,13 @@ body {
   left: 50%;
 }
 
-.pd6-photo:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
-  outline: 1rem solid #222;
-  z-index: 2;
+.pd6-photo:hover{
+    transform: scale(1.3);
+    outline: 1rem solid #222;
+    z-index: 2;
 }
-
-.gallery:hover .pd6-photo:not(:hover) {
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
-  opacity: 0.3;
-}
+.gallery:hover .pd6-photo:not(:hover){
+    transform: scale(0.5);
+    opacity: 0.3;
+} */
 /*# sourceMappingURL=style.css.map */
