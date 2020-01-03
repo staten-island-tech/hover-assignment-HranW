@@ -61,6 +61,8 @@ body {
 .Waterfall {
   top: 40rem;
   left: 24rem;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
 }
 
 .Mountain {
@@ -77,17 +79,41 @@ body {
   z-index: 2;
 }
 
-.gallery:hover .Wallpapers:not(:hover) {
-  -webkit-transform: scale(0.75);
-          transform: scale(0.75);
+/* .gallery:hover .Wallpapers:not(:hover) {
+  transform: scale(0.75);
   opacity: 0.3;
-}
-
+} */
 .Mountain:hover {
   -webkit-filter: grayscale(0%);
           filter: grayscale(0%);
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+}
+
+.Waterfall:hover {
+  -webkit-filter: blur(0);
+          filter: blur(0);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.Clouds:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.China:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0 0 10rem #ffee10;
+          box-shadow: 0 0 10rem #ffee10;
+}
+
+.Birds:hover {
+  -webkit-filter: hue-rotate(100deg);
+          filter: hue-rotate(100deg);
 }
 
 /* html {

@@ -58,6 +58,7 @@ body {
 .Waterfall {
   top: 40rem;
   left: 24rem;
+  filter: blur(3px)
 }
 
 .Mountain {
@@ -72,15 +73,36 @@ body {
   z-index: 2;
 }
 
-.gallery:hover .Wallpapers:not(:hover) {
+/* .gallery:hover .Wallpapers:not(:hover) {
   transform: scale(0.75);
   opacity: 0.3;
-}
+} */
 
 .Mountain:hover {
   filter: grayscale(0%);
   transition: 0.5s ease-in-out;
 }
+
+.Waterfall:hover {
+  filter: blur(0);
+  transition: 0.5s ease-in-out;
+}
+
+.Clouds:hover {
+  transform: rotate(360deg);
+  transition: 0.5s ease-in-out;
+} 
+
+.China:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10rem #ffee10;
+}
+
+.Birds:hover {
+  filter: hue-rotate(100deg);
+}
+
+
 
 /* html {
   padding: 0;
