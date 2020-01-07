@@ -80,8 +80,7 @@ body {
 }
 
 .data-container {
-  background: #ffebee;
-  height: 50rem;
+  height: 35rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,42 +95,42 @@ body {
 .btn {
   cursor: pointer;
   position: relative;
-  padding: 10px 20px;
-  background: white;
-  font-size: 28px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  padding: 1rem 2rem;
+  background: greenyellow;
+  font-size: 2.8rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
 .btn:after, .btn:before {
   content: " ";
-  width: 10px;
-  height: 10px;
+  width: 1rem;
+  height: 1rem;
   position: absolute;
-  border: 0px solid #fff;
+  border: 0rem solid #fff;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
 .btn:after {
-  top: -1px;
-  left: -1px;
-  border-top: 5px solid black;
-  border-left: 5px solid black;
+  top: -0.1rem;
+  left: -0.1rem;
+  border-top: 0.5rem solid black;
+  border-left: 0.5rem solid black;
 }
 
 .btn:before {
-  bottom: -1px;
-  right: -1px;
-  border-bottom: 5px solid black;
-  border-right: 5px solid black;
+  bottom: -0.1rem;
+  right: -0.1rem;
+  border-bottom: 0.5rem solid black;
+  border-right: 0.5rem solid black;
 }
 
 .btn:hover {
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0rem;
+  border-bottom-left-radius: 0rem;
 }
 
 .btn:hover:before, .btn:hover:after {
@@ -174,6 +173,18 @@ body {
 .Birds:hover {
   -webkit-filter: hue-rotate(100deg);
           filter: hue-rotate(100deg);
+}
+
+.Ocean:hover {
+  -webkit-box-shadow: 2rem 2rem 2rem gray;
+          box-shadow: 2rem 2rem 2rem gray;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+button {
+  border-color: transparent;
+  background-color: transparent;
 }
 
 /* html {
@@ -232,24 +243,4 @@ body {
     transform: scale(0.5);
     opacity: 0.3;
 } */
-@-webkit-keyframes Mountains {
-  0% {
-    -webkit-transform: translateX(-200rem);
-            transform: translateX(-200rem);
-  }
-  100% {
-    -webkit-transform: translateX(0rem);
-            transform: translateX(0rem);
-  }
-}
-@keyframes Mountains {
-  0% {
-    -webkit-transform: translateX(-200rem);
-            transform: translateX(-200rem);
-  }
-  100% {
-    -webkit-transform: translateX(0rem);
-            transform: translateX(0rem);
-  }
-}
 /*# sourceMappingURL=style.css.map */
