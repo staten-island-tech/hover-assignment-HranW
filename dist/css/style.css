@@ -10,6 +10,10 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 204, 255, 0.397)), to(rgba(136, 247, 85, 0.253)));
   background-image: linear-gradient(to bottom, rgba(0, 204, 255, 0.397), rgba(136, 247, 85, 0.253));
   background-size: cover;
+  -webkit-animation-name: change;
+          animation-name: change;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 .gallery {
@@ -243,4 +247,20 @@ body {
     transform: scale(0.5);
     opacity: 0.3;
 } */
+@-webkit-keyframes change {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: #83e2e6;
+  }
+}
+@keyframes change {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: #83e2e6;
+  }
+}
 /*# sourceMappingURL=style.css.map */

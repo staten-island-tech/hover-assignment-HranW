@@ -12,6 +12,8 @@ body {
     rgba(136, 247, 85, 0.253)
   );
   background-size: cover;
+  animation-name: change;
+  animation-duration: 5s;
 }
 
 .gallery {
@@ -219,3 +221,8 @@ body {
     transform: scale(0.5);
     opacity: 0.3;
 } */
+
+@keyframes change{
+  from {background-color: red;}
+  to {background-color: rgb(131, 226, 230);}
+}
